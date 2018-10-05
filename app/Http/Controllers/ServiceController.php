@@ -89,7 +89,7 @@ class ServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $filename='';
+        $filename=null;
         if($request->hasfile('img'))
         { 
             $filename = $request->file('img')->store('imgs');
@@ -100,7 +100,7 @@ class ServiceController extends Controller
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
        $service->lng=$request->get('lng'); 
-       //if($filename !=''){$service->filename=$filename;}
+       $service->filename=$filename;
        $service->save();
        return redirect('services')->with('success', 'تم التعديل بنجاح');
     }
