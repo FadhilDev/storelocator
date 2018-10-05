@@ -40,7 +40,7 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   $filename=null;
         if($request->hasfile('img'))
         { 
             $filename = $request->file('img')->store('imgs');
@@ -94,14 +94,13 @@ class ServiceController extends Controller
         { 
             $filename = $request->file('img')->store('imgs');
         }
-
        $service= Service::find($id);
        $service->name=$request->get('name');
        $service->details=$request->get('details');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
-       $service->lng=$request->get('lng');
-       if($filename){ $service->filename=$filename;}
+       $service->lng=$request->get('lng'); 
+       //if($filename !=''){$service->filename=$filename;}
        $service->save();
        return redirect('services')->with('success', 'تم التعديل بنجاح');
     }
