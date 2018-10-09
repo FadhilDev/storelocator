@@ -1,6 +1,7 @@
 <template>
      <gmap-map :center="center" :zoom="15" style="width: 100%; height: 100%">
       <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen=false">
+<<<<<<< HEAD
        
  <template>
   <v-layout>
@@ -23,6 +24,16 @@
   </v-layout>
 </template>
   
+=======
+                 
+                  <template>
+  <v-card>
+    <v-card-text>
+      <p class="text-xs-center"> {{infoContent.infoText}}</p>
+    </v-card-text>
+  </v-card>
+</template>
+>>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
       </gmap-info-window>
 
       <gmap-marker :key="index" v-for="(marker,index) in markers" :position="marker.position" :clickable="true" @click="toggleInfoWindow(marker,index)"></gmap-marker>
@@ -34,9 +45,16 @@ export default {
   name: "GoogleMap",
   data() {
     return {
+<<<<<<< HEAD
       center: {
             lat: 47.376332,
             lng: 8.547511
+=======
+  
+      center: {
+           lat:0,
+           lng: 0
+>>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
           },
            infoContent: '',
           infoWindowPos: null,
@@ -55,11 +73,20 @@ export default {
   },
   mounted() {
     console.log("mounted");
+<<<<<<< HEAD
      axios.get('api/services')
                 .then(({data})=>{
                   this.markers=data.data;
                    console.log(data.data)
                    console.log('Markers  '+this.markers)
+=======
+     axios.get('api/map')
+                .then(({data})=>{
+                  this.markers=data.data;
+                   this.center.lat=data.data[0].position.lat;;
+                   this.center.lng=data.data[0].position.lng;
+                  
+>>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
                 })
                 .catch((resp)=> {
                     console.log(resp);

@@ -23,6 +23,9 @@ class Service extends JsonResource
                 'infoText' =>$this->name,
                 'infoDetails' =>$this->details, ]   
         ];
+<<<<<<< HEAD
         ///return parent::toArray($request);
+=======
+>>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
     }
 }

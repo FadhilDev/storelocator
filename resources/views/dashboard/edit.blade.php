@@ -12,7 +12,12 @@
     </div>
     <div class="form-group">
       <label for="inputDetails">التفاصيل</label>
-      <textarea class="form-control" id="inputDetails" name="details" rows="3" required>{{$service->details}}</textarea>
+      <textarea class="form-control" id="inputDetails" name="details" rows="3">{{$service->details}}</textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="inputPhone">الموبايل</label>
+      <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="أدخل الموبايل"  value="{{$service->phone}}">
     </div>
 
     <div class="form-group">
@@ -23,18 +28,19 @@
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputLat">خط العرض</label>
-        <input type="text" class="form-control" id="inputLat" name="lat" required required value="{{$service->lat}}">
+        <input type="text" class="form-control" id="inputLat" name="lat"   value="{{$service->lat}}">
       </div>
       <div class="form-group col-md-6">
         <label for="inputLng">خط الطول</label>
-        <input type="text" class="form-control" id="inputLng" name="lng" required required value="{{$service->lng}}">
+        <input type="text" class="form-control" id="inputLng" name="lng"   value="{{$service->lng}}">
       </div>
     </div>
     <button id='btnLocation' type="button" class="btn btn-link">تحديد الموقع</button>
     <div class="form-group">
       <label for="inputCat">الصنف</label>
-      <select id="inputCat" name="category" class="form-control">
-                          <option selected>اختر...</option>
+
+      <select id="inputCat" name="category" class="form-control" required>
+                          <option selected disabled></option>
                           <option value="1" @if($service->category==1) selected @endif>المزارات</option>
                           <option value="2" @if($service->category==2) selected @endif>الفنادق</option>
                           <option value="3" @if($service->category==3) selected @endif>الصحيات</option>

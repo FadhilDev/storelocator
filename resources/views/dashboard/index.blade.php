@@ -14,7 +14,8 @@
      @endif
      <div class="row">
        <div class="col-md-12 mx-2">
-        <a href="{{action('DashboardController@create')}}" class="btn btn-primary">أضافه</a></div>
+        <a href="{{action('DashboardController@create')}}" class="btn btn-primary">أضافه</a>
+      </div>
       @foreach($services as $service)
 
 <div class="col-md-6 col-sm-12">

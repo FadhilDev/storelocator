@@ -22,18 +22,18 @@
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputLat">خط العرض</label>
-                        <input type="text" class="form-control" id="inputLat" name="lat"  required>
+                        <input type="text" class="form-control" id="inputLat" name="lat">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputLng">خط الطول</label>
-                        <input type="text" class="form-control" id="inputLng" name="lng"  required>
+                        <input type="text" class="form-control" id="inputLng" name="lng">
                       </div>
                     </div>
                     <button id='btnLocation' type="button" class="btn btn-link">تحديد الموقع</button>
                     <div class="form-group">
                             <label for="inputCat">الصنف</label>
-                            <select id="inputCat" name="category" class="form-control">
-                              <option selected>اختر...</option>
+                            <select id="inputCat" name="category" class="form-control" required>
+                              <option selected disabled></option>
                               <option value="1">المزارات</option>
                               <option value="2">الفنادق</option>
                               <option value="3">الصحيات</option>

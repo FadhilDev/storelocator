@@ -1,10 +1,10 @@
 <template>
     <v-app id="inspire">
         <v-navigation-drawer
-                :clipped="$vuetify.breakpoint.lgAndUp"
+                clipped
                 v-model="drawer"
                 fixed
-                right
+                :right="right"
                 app
         >
             <v-img :aspect-ratio="16/9" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
@@ -34,7 +34,11 @@
                         </v-list-tile-content>
                     </v-list-tile>
 
+<<<<<<< HEAD
                         <v-list-tile @click="">
+=======
+                        <v-list-tile :to="{ name: 'Page2'}">
+>>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -42,7 +46,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page3'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -50,7 +54,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page4'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -58,7 +62,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page5'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -66,7 +70,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page6'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -74,7 +78,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page7'}" @click="title='المطاعم'">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -82,7 +86,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page8'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -90,7 +94,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page9'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -98,7 +102,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page10'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -106,15 +110,23 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                        <v-list-tile to="/location">
+                        <v-list-tile :to="{ name: 'Page11'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
+<<<<<<< HEAD
                                 <v-list-tile-title>مداخل المدينه</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
 
                          <v-list-tile to="/location">
+=======
+                                <v-list-tile-title >مداخل المدينه</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+
+                         <v-list-tile :to="{ name: 'google_map'}">
+>>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -123,7 +135,7 @@
                         </v-list-tile>
                 </v-list-group>
 
-                <v-list-tile to="/kkk">
+                <v-list-tile :to="{ name: 'emergency_lines'}">
                  <v-list-tile-action>
                      <v-icon>phone_in_talk</v-icon>
                  </v-list-tile-action>
@@ -137,13 +149,13 @@
                      <v-icon>question_answer</v-icon>
                  </v-list-tile-action>
                  <v-list-tile-content>
-                     <v-list-tile-title>الأسئله الشرعيه</v-list-tile-title>
+                     <v-list-tile-title >الأسئله الشرعيه</v-list-tile-title>
                  </v-list-tile-content>
              </v-list-tile>
 
              <v-list-tile to="/kkk">
                  <v-list-tile-action>
-                     <v-icon>book</v-icon>
+                     <v-icon>import_contacts</v-icon>
                  </v-list-tile-action>
                  <v-list-tile-content>
                      <v-list-tile-title>أصدارات الكتب</v-list-tile-title>
@@ -153,7 +165,8 @@
             </v-list>
         </v-navigation-drawer>
         <v-toolbar
-                :clipped-right="$vuetify.breakpoint.lgAndUp"
+                :clipped-right="clippedRight"
+                :clipped-left="clippedLeft"
                 color="teal"
                 dark
                 app
@@ -161,12 +174,39 @@
         >
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
 
-                <span class="title mr-3">دليل خدمة الزائر</span>
-           
-           <!-- <v-spacer></v-spacer>
-            <v-btn icon>
-                <v-icon>more_vert</v-icon>
-            </v-btn>-->
+                <span class="title mr-3">{{ $t('message.hello')}}</span>
+    
+          <v-spacer></v-spacer>
+  <div class="text-xs-center">
+    <v-menu offset-y>
+      <v-btn 
+      icon
+        slot="activator"
+      >
+        <v-icon>language</v-icon>
+      </v-btn>
+      <v-list>
+        <v-list-tile @click="changeLang('en')">
+          <v-list-tile-title>English</v-list-tile-title>
+        </v-list-tile>
+
+        <v-list-tile @click="changeLang('ar')">
+          <v-list-tile-title>عربي</v-list-tile-title>
+        </v-list-tile>
+
+        <v-list-tile @click="changeLang('fa')">
+          <v-list-tile-title>فارسي</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
+    <v-avatar size="32px" tile>
+                    <img
+                            src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
+                            alt="Vuetify"
+                    >
+                </v-avatar>
+  </div>
+
         </v-toolbar>
         <v-content>
 
@@ -178,14 +218,45 @@
 
 <script>
     export default {
+         
         data: () => ({
+            right:true,
+            clippedRight:true,
+            clippedLeft:false,
             drawer: null,
         }),
+    methods: {
+    changeLang(lang){
+         switch (lang) {
+                    case 'en':
+                   this.$i18n.locale='en';
+                   this.$vuetify.rtl=false;
+                   this.right=false;
+                   this.clippedRight=false;
+                   this.clippedLeft=true;
+                        break;
+                    case 'ar':
+                        this.$i18n.locale='ar';
+                   this.$vuetify.rtl=true;
+                   this.right=true;
+                   this.clippedRight=true;
+                   this.clippedLeft=false;
+                        break;
+                    case 'fa':
+                         this.$i18n.locale='fa';
+                   this.$vuetify.rtl=true;
+                   this.right=true;
+                   this.clippedRight=true;
+                   this.clippedLeft=false;
+                        break;
+                }
+       
     }
+    }
+ }
 </script>
-
 <style scoped>
-    .v-list__tile__title {
-        text-align: right;
+    .v-list__tile__title{
+        text-align: justify;
     }
 </style>
