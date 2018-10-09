@@ -120,6 +120,9 @@ class DashboardController extends Controller
     public function destroy($id)
     {
         $service = Service::find($id);
+        if($service->filename!=null)
+        {  Storage::delete('public/imgs/'.$service->filename);
+        }
         $service->delete();
         return redirect('dashboard')->with('success','تم الحذف بنجاح');
     }

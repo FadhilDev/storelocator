@@ -159,9 +159,11 @@
                 app
                 fixed
         >
-        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-
-                <span class="title mr-3">{{ $t('message.hello')}}</span>
+        <v-toolbar-title >
+                <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+                <span>{{ $t('message.hello')}}</span>
+        </v-toolbar-title>
+     
     
           <v-spacer></v-spacer>
   <div class="text-xs-center">
