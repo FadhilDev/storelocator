@@ -33,12 +33,7 @@
                             <v-list-tile-title>المزارت</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
-
-<<<<<<< HEAD
-                        <v-list-tile @click="">
-=======
                         <v-list-tile :to="{ name: 'Page2'}">
->>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -114,19 +109,11 @@
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
-<<<<<<< HEAD
                                 <v-list-tile-title>مداخل المدينه</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
 
-                         <v-list-tile to="/location">
-=======
-                                <v-list-tile-title >مداخل المدينه</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-
                          <v-list-tile :to="{ name: 'google_map'}">
->>>>>>> 253de8f02fa3cecbb64cbf7f021258e6a92a946b
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
