@@ -49,7 +49,6 @@ export default {
                 })
                 .catch((resp)=> {
                     console.log(resp);
-                    alert("Could not create");
                 });
 
   },
