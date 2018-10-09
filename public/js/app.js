@@ -26235,21 +26235,19 @@ module.exports = __webpack_require__(108);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_AllLocation__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_AllLocation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_AllLocation__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SingleLocation__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SingleLocation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SingleLocation__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Services__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Services___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Services__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_router__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuetify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vuetify_dist_vuetify_min_css__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vuetify_dist_vuetify_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_material_design_icons_iconfont_dist_material_design_icons_css__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_material_design_icons_iconfont_dist_material_design_icons_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_material_design_icons_iconfont_dist_material_design_icons_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_google_maps__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue2_google_maps__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_GoogleMap__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_GoogleMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_GoogleMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Services__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Services___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_Services__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuetify__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vuetify__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_material_design_icons_iconfont_dist_material_design_icons_css__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_material_design_icons_iconfont_dist_material_design_icons_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_material_design_icons_iconfont_dist_material_design_icons_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue2_google_maps__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vue2_google_maps__);
 __webpack_require__(26);
 window.Vue = __webpack_require__(19);
 
@@ -26258,29 +26256,30 @@ window.Vue = __webpack_require__(19);
 
 
 
-
-Vue.use(__WEBPACK_IMPORTED_MODULE_4_vue_router__["a" /* default */]);
-var router = new __WEBPACK_IMPORTED_MODULE_4_vue_router__["a" /* default */]({
-    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_3__components_Services___default.a }, { path: '/single_location', component: __WEBPACK_IMPORTED_MODULE_2__components_SingleLocation___default.a }, { path: '/all_location', component: __WEBPACK_IMPORTED_MODULE_1__components_AllLocation___default.a }]
+Vue.use(__WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]);
+var router = new __WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]({
+    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__components_Services___default.a }, { path: '/google_map', component: __WEBPACK_IMPORTED_MODULE_1__components_GoogleMap___default.a }]
 });
 
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_5_vuetify___default.a, { rtl: true });
+Vue.use(__WEBPACK_IMPORTED_MODULE_4_vuetify___default.a, { rtl: true });
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_8_vue2_google_maps__, {
+Vue.use(__WEBPACK_IMPORTED_MODULE_7_vue2_google_maps__, {
     load: {
         key: "AIzaSyCLbarhqrxyP9XUh29eJzGQnbqbjgITShY",
         libraries: "places" // necessary for places input
     }
 });
-/*new Vue({
-    router,
-    render: h => h(App)
-  }).$mount('#app')*/
+new Vue({
+    router: router,
+    render: function render(h) {
+        return h(__WEBPACK_IMPORTED_MODULE_0__App_vue___default.a);
+    }
+}).$mount('#app');
 
 /***/ }),
 /* 26 */
@@ -49311,7 +49310,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-342fc74a"
+var __vue_scopeId__ = "data-v-70fcb908"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -49322,7 +49321,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/AllLocation.vue"
+Component.options.__file = "resources/js/components/GoogleMap.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -49331,9 +49330,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-342fc74a", Component.options)
+    hotAPI.createRecord("data-v-70fcb908", Component.options)
   } else {
-    hotAPI.reload("data-v-342fc74a", Component.options)
+    hotAPI.reload("data-v-70fcb908", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49354,13 +49353,13 @@ var content = __webpack_require__(59);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(6)("0df5b814", content, false, {});
+var update = __webpack_require__(6)("10a08271", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-342fc74a\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AllLocation.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-342fc74a\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AllLocation.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-70fcb908\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GoogleMap.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-70fcb908\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GoogleMap.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -49378,7 +49377,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -49405,44 +49404,78 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "GoogleMap",
-    data: function data() {
-        return {
-            // default to Montreal to keep it simple
-            // change this to whatever makes sense
-            center: { lat: 32.606906, lng: 44.010469 },
-            markers: []
-        };
-    },
-    mounted: function mounted() {
-        console.log('mounted');
-        this.addMarker();
-    },
+  name: "GoogleMap",
+  data: function data() {
+    return {
+      center: {
+        lat: 47.376332,
+        lng: 8.547511
+      },
+      infoContent: '',
+      infoWindowPos: null,
+      infoWinOpen: false,
+      currentMidx: null,
+      //optional: offset infowindow so it visually sits nicely on top of our marker
+      infoOptions: {
+        pixelOffset: {
+          width: 0,
+          height: -35
+        }
+      },
+      markers: []
+
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    console.log("mounted");
+    axios.get('api/services').then(function (_ref) {
+      var data = _ref.data;
+
+      _this.markers = data.data;
+      console.log(data.data);
+      console.log('Markers  ' + _this.markers);
+    }).catch(function (resp) {
+      console.log(resp);
+      alert("Could not create");
+    });
+  },
 
 
-    methods: {
-        addMarker: function addMarker() {
-            var marker = {
-                lat: 32.606906,
-                lng: 44.010469
-            };
-            this.markers.push({ position: marker });
-            this.center = marker;
-        },
+  methods: {
+    toggleInfoWindow: function toggleInfoWindow(marker, idx) {
+      this.infoWindowPos = marker.position;
+      this.infoContent = marker.infoContent;
 
-        geolocate: function geolocate() {
-            var _this = this;
-
-            navigator.geolocation.getCurrentPosition(function (position) {
-                _this.center = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-            });
+      //check if its the same marker that was selected if yes toggle
+      if (this.currentMidx == idx) {
+        this.infoWinOpen = !this.infoWinOpen;
+      }
+      //if different marker set infowindow to open and reset current marker index
+      else {
+          this.infoWinOpen = true;
+          this.currentMidx = idx;
         }
     }
+  }
 });
 
 /***/ }),
@@ -49457,19 +49490,81 @@ var render = function() {
     "gmap-map",
     {
       staticStyle: { width: "100%", height: "100%" },
-      attrs: { center: _vm.center, zoom: 12 }
+      attrs: { center: _vm.center, zoom: 15 }
     },
-    _vm._l(_vm.markers, function(m, index) {
-      return _c("gmap-marker", {
-        key: index,
-        attrs: { icon: "/star-red.png", position: m.position },
-        on: {
-          click: function($event) {
-            _vm.center = m.position
+    [
+      _c(
+        "gmap-info-window",
+        {
+          attrs: {
+            options: _vm.infoOptions,
+            position: _vm.infoWindowPos,
+            opened: _vm.infoWinOpen
+          },
+          on: {
+            closeclick: function($event) {
+              _vm.infoWinOpen = false
+            }
           }
-        }
+        },
+        [
+          [
+            _c(
+              "v-layout",
+              [
+                _c(
+                  "v-flex",
+                  { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                  [
+                    _c(
+                      "v-card",
+                      [
+                        _c("v-img", {
+                          attrs: {
+                            src:
+                              "https://cdn.vuetifyjs.com/images/cards/desert.jpg",
+                            "aspect-ratio": "2.75"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("v-card-title", { attrs: { "primary-title": "" } }, [
+                          _c("div", [
+                            _c("h3", { staticClass: "headline mb-0" }, [
+                              _vm._v(" " + _vm._s(_vm.infoContent.infoText))
+                            ]),
+                            _vm._v(" "),
+                            _c("div", [
+                              _vm._v(_vm._s(_vm.infoContent.infoDetails))
+                            ])
+                          ])
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ]
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _vm._l(_vm.markers, function(marker, index) {
+        return _c("gmap-marker", {
+          key: index,
+          attrs: { position: marker.position, clickable: true },
+          on: {
+            click: function($event) {
+              _vm.toggleInfoWindow(marker, index)
+            }
+          }
+        })
       })
-    })
+    ],
+    2
   )
 }
 var staticRenderFns = []
@@ -49478,7 +49573,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-342fc74a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-70fcb908", module.exports)
   }
 }
 
@@ -49486,40 +49581,10 @@ if (false) {
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var normalizeComponent = __webpack_require__(2)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = null
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/SingleLocation.vue"
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var disposed = false
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(63)
 /* template */
 var __vue_template__ = __webpack_require__(64)
 /* template functional */
@@ -49560,6 +49625,71 @@ module.exports = Component.exports
 
 
 /***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            category: '',
+            list: []
+        };
+    },
+    mounted: function mounted() {
+        console.log('mounted');
+        this.initData();
+        console.log('list' + this.list);
+    },
+
+
+    methods: {
+        initData: function initData() {
+            var _this = this;
+
+            axios.get('api/services', { params: { category: this.category } }).then(function (_ref) {
+                var data = _ref.data;
+
+                console.log('Data  ' + data);
+                _this.list = data;
+            }).catch(function (error) {});
+        }
+    }
+});
+
+/***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49574,10 +49704,10 @@ var render = function() {
       _c(
         "v-layout",
         { attrs: { row: "", wrap: "" } },
-        [
-          _c(
+        _vm._l(_vm.list, function(item, index) {
+          return _c(
             "v-flex",
-            { attrs: { xs12: "", sm6: "", md6: "" } },
+            { key: index, attrs: { xs12: "", sm6: "", md6: "" } },
             [
               _c(
                 "v-card",
@@ -49586,21 +49716,19 @@ var render = function() {
                     staticClass: "white--text",
                     attrs: {
                       height: "200px",
-                      src: "https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                      src: item.filename
+                        ? "storage/imgs/" + item.filename
+                        : "storage/imgs/empty-image.png"
                     }
                   }),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
                       _c("h3", { staticClass: "headline mb-0" }, [
-                        _vm._v("مستشفى الامام زين العابدين")
+                        _vm._v(_vm._s(item.name))
                       ]),
                       _vm._v(" "),
-                      _c("div", [
-                        _vm._v("Located two hours south of Sydney in the "),
-                        _c("br"),
-                        _vm._v("Southern Highlands of New South Wales, ...")
-                      ])
+                      _c("div", [_vm._v(_vm._s(item.details))])
                     ])
                   ]),
                   _vm._v(" "),
@@ -49622,171 +49750,8 @@ var render = function() {
               )
             ],
             1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { attrs: { xs12: "", sm6: "", md6: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-img",
-                    {
-                      staticClass: "white--text",
-                      attrs: {
-                        height: "200px",
-                        src: "https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-                      }
-                    },
-                    [
-                      _c(
-                        "v-container",
-                        { attrs: { "fill-height": "", fluid: "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            { attrs: { "fill-height": "" } },
-                            [
-                              _c(
-                                "v-flex",
-                                {
-                                  attrs: {
-                                    xs12: "",
-                                    "align-end": "",
-                                    flexbox: ""
-                                  }
-                                },
-                                [
-                                  _c("span", { staticClass: "headline" }, [
-                                    _vm._v("Top 10 Australian beaches")
-                                  ])
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-title", [
-                    _c("div", [
-                      _c("span", { staticClass: "grey--text" }, [
-                        _vm._v("Number 10")
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Whitehaven Beach")]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _vm._v("Whitsunday Island, Whitsunday Islands")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-actions",
-                    [
-                      _c("v-icon", { attrs: { color: "red darken-1" } }, [
-                        _vm._v("location_on")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { flat: "", color: "orange" } }, [
-                        _vm._v("Location")
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { attrs: { xs12: "", sm6: "", md6: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-img",
-                    {
-                      staticClass: "white--text",
-                      attrs: {
-                        height: "200px",
-                        src: "https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-                      }
-                    },
-                    [
-                      _c(
-                        "v-container",
-                        { attrs: { "fill-height": "", fluid: "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            { attrs: { "fill-height": "" } },
-                            [
-                              _c("v-flex", { attrs: { xs6: "", md3: "" } }, [
-                                _c("span", { staticClass: "headline" }, [
-                                  _vm._v("Top 10 Australian beaches")
-                                ])
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-title", [
-                    _c("div", [
-                      _c("span", { staticClass: "grey--text" }, [
-                        _vm._v("Number 10")
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Whitehaven Beach")]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _vm._v("Whitsunday Island, Whitsunday Islands")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-actions",
-                    [
-                      _c("v-icon", { attrs: { color: "red darken-1" } }, [
-                        _vm._v("location_on")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { flat: "", color: "orange" } }, [
-                        _vm._v("Location")
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
           )
-        ],
-        1
+        })
       )
     ],
     1

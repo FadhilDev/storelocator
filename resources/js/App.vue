@@ -34,15 +34,7 @@
                         </v-list-tile-content>
                     </v-list-tile>
 
-                        <v-list-tile to="/location">
-                            <v-list-tile-action>
-                            </v-list-tile-action>
-                            <v-list-tile-content>
-                                <v-list-tile-title>الخريطه</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-
-                        <v-list-tile to="/location">
+                        <v-list-tile @click="">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -78,7 +70,7 @@
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                                <v-list-tile-title>مراكز توزيع الكتب مجانا</v-list-tile-title>
+                                <v-list-tile-title>مراكز توزيع الكتب المجانيه</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
 
@@ -118,18 +110,17 @@
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                                <v-list-tile-title>الطبيه</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-
-                        <v-list-tile to="/location">
-                            <v-list-tile-action>
-                            </v-list-tile-action>
-                            <v-list-tile-content>
                                 <v-list-tile-title>مداخل المدينه</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
 
+                         <v-list-tile to="/location">
+                            <v-list-tile-action>
+                            </v-list-tile-action>
+                            <v-list-tile-content>
+                                <v-list-tile-title>الخريطه</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
                 </v-list-group>
 
                 <v-list-tile to="/kkk">
@@ -143,7 +134,7 @@
 
              <v-list-tile to="/kkk">
                  <v-list-tile-action>
-                     <v-icon>book</v-icon>
+                     <v-icon>question_answer</v-icon>
                  </v-list-tile-action>
                  <v-list-tile-content>
                      <v-list-tile-title>الأسئله الشرعيه</v-list-tile-title>

@@ -4,18 +4,18 @@
               grid-list-lg
       >
         <v-layout row wrap>
-          <v-flex  xs12 sm6 md6>
+          <v-flex :key="index" v-for="(item,index) in list" xs12 sm6 md6>
             <v-card>
               <v-img
                       class="white--text"
                       height="200px"
-                      src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                      :src="item.filename ? 'storage/imgs/' + item.filename : 'storage/imgs/empty-image.png'"
               >
               </v-img>
               <v-card-title primary-title>
                 <div>
-                  <h3 class="headline mb-0">مستشفى الامام زين العابدين</h3>
-                  <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  <h3 class="headline mb-0">{{item.name}}</h3>
+                  <div>{{item.details}}</div>
                 </div>
               </v-card-title>
 
@@ -25,65 +25,34 @@
               </v-card-actions>
             </v-card>
           </v-flex>
-
-          <v-flex  xs12 sm6 md6>
-
-            <v-card>
-              <v-img
-                      class="white--text"
-                      height="200px"
-                      src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-              >
-                <v-container fill-height fluid>
-                  <v-layout fill-height>
-                    <v-flex xs12 align-end flexbox>
-                      <span class="headline">Top 10 Australian beaches</span>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-img>
-              <v-card-title>
-                <div>
-                  <span class="grey--text">Number 10</span><br>
-                  <span>Whitehaven Beach</span><br>
-                  <span>Whitsunday Island, Whitsunday Islands</span>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-icon color="red darken-1">location_on</v-icon>
-                <v-btn flat color="orange">Location</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-flex>
-
-          <v-flex  xs12 sm6 md6>
-            <v-card>
-              <v-img
-                      class="white--text"
-                      height="200px"
-                      src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-              >
-                <v-container fill-height fluid>
-                  <v-layout fill-height>
-                    <v-flex  xs6 md3>
-                      <span class="headline">Top 10 Australian beaches</span>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-img>
-              <v-card-title>
-                <div>
-                  <span class="grey--text">Number 10</span><br>
-                  <span>Whitehaven Beach</span><br>
-                  <span>Whitsunday Island, Whitsunday Islands</span>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-icon color="red darken-1">location_on</v-icon>
-                <v-btn flat color="orange">Location</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-flex>
         </v-layout>
       </v-container>
 </template>
+<script>
+    export default {
+        data() {
+            return {
+                category:'',
+                list: [],
+            };
+        },
+        mounted() {
+            console.log('mounted');
+            this.initData();
+            console.log('list'+ this.list);
+        },
+ 
+
+        methods: {
+            initData() {
+                axios.get('api/services', {params: {category: this.category}})
+                    .then(({data}) => {
+                       console.log('Data  '+ data);
+                        this.list = data;
+                    })
+                    .catch(error => {
+                    });
+            },
+        }
+    };
+</script>

@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
             <h4>أضافة موقع جديد</h4><br/>
-            <form method="post" action="{{action('ServiceController@store')}}" enctype="multipart/form-data">
+            <form method="post" action="{{action('DashboardController@store')}}" enctype="multipart/form-data">
               @csrf
                     <div class="form-group">
                             <label for="inputName">الأسم</label>
@@ -12,6 +12,11 @@
                     <div class="form-group">
                             <label for="inputDetails">التفاصيل</label>
                             <textarea class="form-control" id="inputDetails" name="details" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputPhone">الموبايل</label>
+                      <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="أدخل الموبايل">
                     </div>
 
                     <div class="form-row">
@@ -29,7 +34,18 @@
                             <label for="inputCat">الصنف</label>
                             <select id="inputCat" name="category" class="form-control">
                               <option selected>اختر...</option>
-                              <option value="1">فنادق</option>
+                              <option value="1">المزارات</option>
+                              <option value="2">الفنادق</option>
+                              <option value="3">الصحيات</option>
+                              <option value="4">النقل</option>
+                              <option value="5">الهدايا و النذور</option>
+                              <option value="6">مراكز توزيع الكتب المجانيه</option>
+                              <option value="7">المطاعم</option>
+                              <option value="8">الضيافه</option>
+                              <option value="9">مدن الزائرين</option>
+                              <option value="10">أدارة العتبات</option>
+                              <option value="11">مداخل المدينه</option>
+                              <option value="12">اخرى</option>
                             </select>
                           </div>
                           <div class="form-group">

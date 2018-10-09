@@ -6,4 +6,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/logout', 'App\Http\Controllers\auth\LoginController@logout');
-Route::resource('services','ServiceController');
+Route::resource('dashboard','DashboardController');

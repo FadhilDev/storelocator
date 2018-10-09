@@ -24,7 +24,7 @@
     <div>
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel h-10">
             <div class="container p-1">
-                    <a class="navbar-brand" href="{{ url('/services') }}">
+                    <a class="navbar-brand" href="{{ url('/dashboard') }}">
                         لوحة التحكم
                     </a>
                 

@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Service;
 use Illuminate\Http\Request;
-
-class ServiceController extends Controller
+use Illuminate\Support\Facades\Storage;
+class DashboardController extends Controller
 {
     public function __construct()
     {
@@ -40,21 +40,24 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {   $filename=null;
+    {  
+        $service= new Service;
+
         if($request->hasfile('img'))
         { 
-            $filename = $request->file('img')->store('imgs');
+            $Path = Storage::putFile('public/imgs',$request->file('img'));
+            $imagePath = explode('/',$Path);
+            $service->filename=$imagePath[2];
         }
 
-       $service= new Service;
        $service->name=$request->get('name');
        $service->details=$request->get('details');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
        $service->lng=$request->get('lng');
-       $service->filename=$filename;
+       $service->phone=$request->get('phone');  
        $service->save();
-       return redirect('services')->with('success', 'تمت الأضافه بنجاح');
+       return redirect('dashboard')->with('success', 'تمت الأضافه بنجاح');
     }
 
     /**
@@ -89,20 +92,23 @@ class ServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $filename=null;
+        $service= Service::find($id);
+
         if($request->hasfile('img'))
-        { 
-            $filename = $request->file('img')->store('imgs');
+        {  Storage::delete('public/imgs/'.$service->filename);
+            $Path = Storage::putFile('public/imgs',$request->file('img'));
+            $imagePath = explode('/',$Path);
+            $service->filename= $imagePath[2];
         }
-       $service= Service::find($id);
+      
        $service->name=$request->get('name');
        $service->details=$request->get('details');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
-       $service->lng=$request->get('lng'); 
-       $service->filename=$filename;
+       $service->lng=$request->get('lng');
+       $service->phone=$request->get('phone');  
        $service->save();
-       return redirect('services')->with('success', 'تم التعديل بنجاح');
+       return redirect('dashboard')->with('success', 'تم التعديل بنجاح');
     }
 
     /**
@@ -115,6 +121,6 @@ class ServiceController extends Controller
     {
         $service = Service::find($id);
         $service->delete();
-        return redirect('services')->with('success','تم الحذف بنجاح');
+        return redirect('dashboard')->with('success','تم الحذف بنجاح');
     }
 }
