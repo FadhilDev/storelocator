@@ -2,18 +2,22 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import App from './App.vue'
-import AllLocation from "./components/AllLocation";
-import SingleLocation from "./components/SingleLocation";
-import Services from "./components/Services";
+
+
+import VueI18n from 'vue-i18n'
+import {messages} from './lang.js'
+Vue.use(VueI18n);
+const i18n=new VueI18n({
+    locale:'ar',
+    messages,
+})
+
 
 import VueRouter from 'vue-router'
+import {routes} from './routes.js'
 Vue.use(VueRouter);
 const router = new VueRouter({
- routes: [
-        { path: '/', component: Services },
-        { path: '/single_location', component: SingleLocation },
-        { path: '/all_location', component: AllLocation }
-    ]
+    routes
 });
 
 import Vuetify from 'vuetify'
@@ -29,8 +33,9 @@ Vue.use(VueGoogleMaps, {
         libraries: "places" // necessary for places input
     }
 });
-/*new Vue({
+new Vue({
+    i18n,
     router,
     render: h => h(App)
-  }).$mount('#app')*/
+  }).$mount('#app')
   

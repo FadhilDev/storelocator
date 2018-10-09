@@ -16,12 +16,12 @@ class CreateServicesTable extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->text('details');
+            $table->text('details')->nullable();
             $table->text('phone')->nullable();
             $table->integer('category');
             $table->string('filename')->nullable();
-            $table->decimal('lat', 10,8);
-            $table->decimal('lng', 11,8);
+            $table->decimal('lat', 10,8)->nullable();
+            $table->decimal('lng', 11,8)->nullable();
             $table->timestamps();
         });
     }
