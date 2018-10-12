@@ -18,7 +18,7 @@
       </div>
       @foreach($services as $service)
 
-<div class="col-md-6 col-sm-12">
+<div class="col-lg-4 col-md-6 col-sm-12">
       <div class="card shadow rounded p-2 m-2">
         <img class="card-img-top" style="height:20rem"
         src=

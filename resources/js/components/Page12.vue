@@ -4,7 +4,7 @@
               grid-list-lg
       >
         <v-layout row wrap>
-          <v-flex :key="index" v-for="(item,index) in list" xs12 sm6 md6>
+          <v-flex :key="index" v-for="(item,index) in list" xs12 sm6 md6 lg4>
             <v-card>
               <v-img
                       class="white--text"
@@ -21,7 +21,7 @@
 
               <v-card-actions>
                 <v-icon color="red darken-1">location_on</v-icon>
-                <v-btn flat color="orange">الموقع</v-btn>
+                 <v-btn flat color="orange" :to="{ name: 'single_location',params:{lat:item.lat,lng:item.lng}}" >{{$t('message.location')}}</v-btn>
               </v-card-actions>
             </v-card>
           </v-flex>
@@ -36,9 +36,7 @@
             };
         },
         mounted() {
-            console.log('mounted');
             this.initData();
-            console.log('list'+ this.list);
         },
  
 
@@ -46,7 +44,6 @@
             initData() {
                 axios.get('api/services', {params: {category: 12}})
                     .then(({data}) => {
-                       console.log('Data  '+ data);
                         this.list = data;
                     })
                     .catch(error => {

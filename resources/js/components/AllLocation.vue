@@ -40,7 +40,6 @@ export default {
     };
   },
   mounted() {
-    console.log("mounted");
      axios.get('api/map')
                 .then(({data})=>{
                   this.markers=data.data;
