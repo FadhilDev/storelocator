@@ -19,11 +19,11 @@
 
             <v-list dense>
                 <v-list-group
-                        prepend-icon="list"
+                        prepend-icon="widgets"
 
                 >
                     <v-list-tile slot="activator">
-                        <v-list-tile-title>الخدمات</v-list-tile-title>
+                        <v-list-tile-title>{{ $t('message.services')}}</v-list-tile-title>
                     </v-list-tile>
 
                     <v-list-tile to="/">
@@ -113,7 +113,7 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
-                         <v-list-tile :to="{ name: 'google_map'}">
+                         <v-list-tile :to="{ name: 'all_location'}">
                             <v-list-tile-action>
                             </v-list-tile-action>
                             <v-list-tile-content>
@@ -127,11 +127,11 @@
                      <v-icon>phone_in_talk</v-icon>
                  </v-list-tile-action>
                  <v-list-tile-content>
-                     <v-list-tile-title>خطوط الطوارئ</v-list-tile-title>
+                     <v-list-tile-title>{{ $t('message.emergency_lines')}}</v-list-tile-title>
                  </v-list-tile-content>
              </v-list-tile>
 
-             <v-list-tile to="/kkk">
+             <v-list-tile :to="{ name: 'question_answer'}">
                  <v-list-tile-action>
                      <v-icon>question_answer</v-icon>
                  </v-list-tile-action>
@@ -140,7 +140,7 @@
                  </v-list-tile-content>
              </v-list-tile>
 
-             <v-list-tile to="/kkk">
+             <v-list-tile :to="{ name: 'books_edition'}">
                  <v-list-tile-action>
                      <v-icon>import_contacts</v-icon>
                  </v-list-tile-action>
@@ -161,7 +161,7 @@
         >
         <v-toolbar-title >
                 <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-                <span>{{ $t('message.hello')}}</span>
+                <span>{{ $t('message.app_title')}}</span>
         </v-toolbar-title>
      
     

@@ -21,7 +21,7 @@ class ServiceController extends Controller
             return ServiceResource::collection($services);
         }
         else {
-            $services = Service::where('category',1)->get();
+            $services = Service::where('category',$request->category)->get();
             return ServiceResource::collection($services);
         
         }

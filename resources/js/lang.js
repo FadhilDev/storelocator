@@ -2,17 +2,26 @@
 export const messages={
     en:{
         message:{
-            hello:'Visitor Guide'
+            app_title:'Visitor Guide',
+            services:'Services',
+            location:'Location',
+            emergency_lines:'Emergency Lines',
         }
     },
     ar:{
         message:{
-            hello:'دليل الزائر'
+            app_title:'دليل الزائر',
+            services:'الخدمات',
+            location:'الموقع',
+            emergency_lines:'خطوط الطورائ',
         }
     },
     fa:{
         message:{
-            hello:'راهنمامي بازديد كننده'
+            app_title:'راهنمامي بازديد كننده',
+            services:'الخدمات',
+            location:'الموقع',
+            emergency_lines:'Emergency Lines',
         }
     },
     

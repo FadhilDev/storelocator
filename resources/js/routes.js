@@ -10,8 +10,11 @@ import Page9 from "./components/Page9";
 import Page10 from "./components/Page10";
 import Page11 from "./components/Page11";
 import Page12 from "./components/Page12";
-import google_map from "./components/GoogleMap";
+import all_location from "./components/AllLocation";
+import single_location from "./components/SingleLocation";
 import emergency_lines from "./components/EmergencyLines";
+import question_answer from "./components/QuestionAnswer";
+import books_edition  from "./components/BooksEdition";
 export const routes= [
  
     {
@@ -70,14 +73,28 @@ export const routes= [
             component: Page11
         },
         {
-            path: '/google_map',
-            name: 'google_map',
-            component: google_map
+            path: '/all_location',
+            name: 'all_location',
+            component: all_location
+        },
+        {
+            path: '/single_location',
+            name: 'single_location',
+            component: single_location
         },
         {
             path: '/emergency_lines',
             name: 'emergency_lines',
             component: emergency_lines
         },
-        
+        {
+            path: '/question_answer',
+            name: 'question_answer',
+            component: question_answer
+        },
+        {
+            path: '/books_edition',
+            name: 'books_edition',
+            component: books_edition
+        }
     ]
