@@ -6,7 +6,7 @@ import VueI18n from 'vue-i18n'
 import {messages} from './lang.js'
 Vue.use(VueI18n);
 const i18n=new VueI18n({
-    locale:'ar',
+    locale:'en',
     messages,
 })
 
@@ -20,7 +20,7 @@ const router = new VueRouter({
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
-Vue.use(Vuetify,{rtl:true});
+Vue.use(Vuetify);
 
 import * as VueGoogleMaps from "vue2-google-maps";
 

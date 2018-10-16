@@ -19,6 +19,12 @@ export const routes= [
  
     {
         path: '/',
+        redirect:{
+            name:"Page1"
+        }
+    },
+    {
+        path: '/Page1',
         name: 'Page1',
         component: Page1
     },

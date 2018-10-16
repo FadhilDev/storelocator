@@ -7,12 +7,29 @@
     <input name="_method" type="hidden" value="PATCH">
 
     <div class="form-group">
-      <label for="inputName">الأسم</label>
-      <input type="text" class="form-control" id="inputName" name="name" placeholder="أدخل الأسم" required value="{{$service->name}}">
+      <label for="inputNameAr">الاسم بالعربي</label>
+      <input type="text" class="form-control" id="inputNameAr" name="name_ar" placeholder="أدخل الأسم" required value="{{$service->name_ar}}">
     </div>
     <div class="form-group">
-      <label for="inputDetails">التفاصيل</label>
-      <textarea class="form-control" id="inputDetails" name="details" rows="3">{{$service->details}}</textarea>
+      <label for="inputNameEn">الاسم بالانكليزي</label>
+      <input type="text" class="form-control" id="inputNameEn" name="name_en" placeholder="أدخل الأسم" required value="{{$service->name_en}}">
+    </div>
+    <div class="form-group">
+      <label for="inputNameFa">الاسم بالفارسي</label>
+      <input type="text" class="form-control" id="inputNameFa" name="name_fa" placeholder="أدخل الأسم" required value="{{$service->name_fa}}">
+    </div>
+
+    <div class="form-group">
+      <label for="inputDetailsAr">التفاصيل بالعربي</label>
+      <textarea class="form-control" id="inputDetailsAr" name="details_ar" rows="2">{{$service->details_ar}}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="inputDetailsEn">التفاصيل بالانكليزي</label>
+      <textarea class="form-control" id="inputDetailsEn" name="details_en" rows="2">{{$service->details_en}}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="inputDetailsFa">التفاصيل بالفارسي</label>
+      <textarea class="form-control" id="inputDetailsFa" name="details_fa" rows="2">{{$service->details_fa}}</textarea>
     </div>
 
     <div class="form-group">

@@ -33,15 +33,19 @@ class DashboardController extends Controller
         { 
             $image = Image::make($request->file('img'))
             ->resize(400, 300, function ($constraint) { $constraint->aspectRatio(); } )
-            ->encode('jpg',80);
+            ->encode('jpg');
             $imageName= md5($image->__toString());
             $path = "public/imgs/{$imageName}.jpg";
             Storage::put($path,$image);
            $service->filename=$imageName.'.jpg';
         }
 
-       $service->name=$request->get('name');
-       $service->details=$request->get('details');
+        $service->name_ar=$request->get('name_ar');
+        $service->name_en=$request->get('name_en');
+        $service->name_fa=$request->get('name_fa');
+        $service->details_ar=$request->get('details_ar');
+        $service->details_en=$request->get('details_en');
+        $service->details_fa=$request->get('details_fa');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
        $service->lng=$request->get('lng');
@@ -67,15 +71,19 @@ class DashboardController extends Controller
         {  Storage::delete('public/imgs/'.$service->filename);
             $image = Image::make($request->file('img'))
             ->resize(400, 300, function ($constraint) { $constraint->aspectRatio(); } )
-            ->encode('jpg',80);
+            ->encode('jpg');
             $imageName= md5($image->__toString());
             $path = "public/imgs/{$imageName}.jpg";
             Storage::put($path,$image);
            $service->filename=$imageName.'.jpg';
         }
       
-       $service->name=$request->get('name');
-       $service->details=$request->get('details');
+       $service->name_ar=$request->get('name_ar');
+       $service->name_en=$request->get('name_en');
+       $service->name_fa=$request->get('name_fa');
+       $service->details_ar=$request->get('details_ar');
+       $service->details_en=$request->get('details_en');
+       $service->details_fa=$request->get('details_fa');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
        $service->lng=$request->get('lng');

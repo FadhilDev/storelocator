@@ -39,10 +39,14 @@
             this.initData();
         },
  
-
+ watch: {
+   '$i18n.locale': function () {
+      this.initData();
+   }
+    },
         methods: {
             initData() {
-                axios.get('api/services', {params: {category: 10}})
+                axios.get('api/services', {params: {category: 10,lang:this.$i18n.locale}})
                     .then(({data}) => {
                        console.log('Data  '+ data);
                         this.list = data;
