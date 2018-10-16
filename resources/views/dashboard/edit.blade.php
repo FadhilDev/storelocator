@@ -37,11 +37,6 @@
       <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="أدخل الموبايل"  value="{{$service->phone}}">
     </div>
 
-    <div class="form-group">
-      <label for="inputPhone">الموبايل</label>
-      <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="أدخل الموبايل"  value="{{$service->phone}}">
-    </div>
-
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputLat">خط العرض</label>

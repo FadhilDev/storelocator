@@ -7,7 +7,7 @@
                 :right="right"
                 app
         >
-            <v-img :aspect-ratio="16/9" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+            <v-img :aspect-ratio="16/9" src="storage/imgs/side-logo.png">
                 <!--v-layout pa-2 column fill-height class="lightbox white--text">
                     <v-spacer></v-spacer>
                     <v-flex shrink>
@@ -186,8 +186,8 @@
     </v-menu>
     <v-avatar size="32px" tile>
                     <img
-                            src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
-                            alt="Vuetify"
+                            src="storage/imgs/logo.png"
+                            alt="logo"
                     >
                 </v-avatar>
   </div>

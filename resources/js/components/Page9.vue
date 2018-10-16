@@ -16,6 +16,7 @@
                 <div>
                   <h3 class="headline mb-0">{{item.name}}</h3>
                   <div>{{item.details}}</div>
+                    <span class="grey--text">{{item.phone}}</span>
                 </div>
               </v-card-title>
 
