@@ -15,7 +15,7 @@ class DashboardController extends Controller
 
     public function index()
     {
-        $services=Service::all();
+        $services=Service::paginate(15);
         return view('dashboard/index',compact('services'));
     }
 

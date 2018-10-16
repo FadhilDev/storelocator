@@ -57,6 +57,7 @@
         </div>
       </div>
       @endforeach
+      {{ $services->links() }}
     </div>
   </div>
 @endsection
