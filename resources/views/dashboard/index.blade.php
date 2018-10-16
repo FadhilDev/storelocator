@@ -57,7 +57,9 @@
         </div>
       </div>
       @endforeach
+      <div class="col-md-12 mx-2">
       {{ $services->links() }}
+    </div>
     </div>
   </div>
 @endsection
