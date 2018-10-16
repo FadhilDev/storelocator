@@ -29,8 +29,14 @@
           @endif
         alt="Card image cap">
           <div class="card-body">
-            <h3 class="card-title">{{$service['name']}}</h4>
-            <p class="card-text">{{$service['details']}}</p>
+            <h3 class="card-title">{{$service['name_ar']}}</h4>
+            <p class="card-text">{{$service['details_ar']}}</p>
+            <hr/>
+            <h3 class="card-title">{{$service['name_en']}}</h4>
+              <p class="card-text">{{$service['details_en']}}</p>
+              <hr/>
+              <h3 class="card-title">{{$service['name_fa']}}</h4>
+                <p class="card-text">{{$service['details_fa']}}</p>
 
             <div class="d-flex flex-row justify-content-end" style="margin: 0 -4px;">
 

@@ -38,11 +38,15 @@
         mounted() {
             this.initData();
         },
- 
+  watch: {
+   '$i18n.locale': function () {
+      this.initData();
+   }
+    },
 
         methods: {
             initData() {
-                axios.get('api/services', {params: {category: 11}})
+                axios.get('api/services', {params: {category: 11,lang:this.$i18n.locale}})
                     .then(({data}) => {
                        console.log('Data  '+ data);
                         this.list = data;

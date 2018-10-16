@@ -3,9 +3,9 @@
       <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen=false">
                  
   <template>
-  <v-card>
+      <v-card>
     <v-card-text>
-      <p class="text-xs-center"> {{infoContent.infoText}}</p>
+      <p class="text-lg-center blue-grey--text">{{infoContent.infoText}}</p>
     </v-card-text>
   </v-card>
 </template>
@@ -21,9 +21,10 @@ export default {
   data() {
     return {
       center: {
-           lat:0,
-           lng: 0
+            lat: 32.607072,
+            lng: 44.010930
           },
+           markers: [],
            infoContent: '',
           infoWindowPos: null,
           infoWinOpen: false,
@@ -34,22 +35,16 @@ export default {
               width: 0,
               height: -35
             }
-          },
-      markers: [],
-        
+          }, 
     };
   },
+  watch: {
+   '$i18n.locale': function () {
+      this.initData();
+   }
+    },
   mounted() {
-     axios.get('api/map')
-                .then(({data})=>{
-                  this.markers=data.data;
-                   this.center.lat=data.data[0].position.lat;;
-                   this.center.lng=data.data[0].position.lng;
-                })
-                .catch((resp)=> {
-                    console.log(resp);
-                });
-
+     this.initData();
   },
 
   methods: {
@@ -67,7 +62,16 @@ export default {
               this.currentMidx = idx;
 
             }
-          }
+          },
+           initData() {
+              axios.get('api/map', {params: {lang:this.$i18n.locale}})
+                .then(({data})=>{
+                  this.markers=data.data;
+                })
+                .catch((resp)=> {
+                    console.log(resp);
+                });
+            },
   }
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
     <gmap-map
             :center="center"
-            :zoom="12"
+            :zoom="15"
             style="width:100%;  height: 100%;"
     >
          <gmap-marker :key="index" v-for="(marker,index) in markers"
@@ -18,13 +18,7 @@ export default {
             lat: 32.607072,
             lng: 44.010930
           },
-      markers: [
-        {position:{
-          lat: 32.607072,
-            lng: 44.010930
-            }
-        }
-      ]
+      markers: []
     };
   },
   mounted() {

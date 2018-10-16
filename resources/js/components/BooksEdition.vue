@@ -6,18 +6,19 @@
 <v-layout row wrap>
         <v-flex md12 sm12 xs12>
             <v-card>
-                <v-list>
+                <v-list two_line>
                     <v-list-tile>
                         <v-list-tile-action>
-                            <v-icon color="blue darken-2">book</v-icon>
+                            <v-icon color="teal accent-4">book</v-icon>
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                            <v-list-tile-title>الوسائل العامه</v-list-tile-title>
+                              <v-list-tile-title>Book Title</v-list-tile-title>
+                             <v-list-tile-sub-title>Book Language</v-list-tile-sub-title>
                         </v-list-tile-content>
 
                          <v-list-tile-action>
-                            <v-icon color="blue darken-2">cloud_download</v-icon>
+                            <v-icon color="blue-grey">cloud_download</v-icon>
                         </v-list-tile-action>
 
                     </v-list-tile>
@@ -27,15 +28,16 @@
                    <v-list>
                     <v-list-tile>
                         <v-list-tile-action>
-                            <v-icon color="blue darken-2">book</v-icon>
+                            <v-icon color="teal accent-4">book</v-icon>
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                            <v-list-tile-title>الوسائل العامه</v-list-tile-title>
+                               <v-list-tile-title>Book Title</v-list-tile-title>
+                             <v-list-tile-sub-title>Book Language</v-list-tile-sub-title>
                         </v-list-tile-content>
 
                          <v-list-tile-action>
-                            <v-icon color="blue darken-2">cloud_download</v-icon>
+                            <v-icon color="blue-grey">cloud_download</v-icon>
                         </v-list-tile-action>
 
                     </v-list-tile>
@@ -45,15 +47,16 @@
                    <v-list>
                     <v-list-tile>
                         <v-list-tile-action>
-                            <v-icon color="blue darken-2">book</v-icon>
+                            <v-icon color="teal accent-4">book</v-icon>
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                            <v-list-tile-title>الوسائل العامه</v-list-tile-title>
+                              <v-list-tile-title>Book Title</v-list-tile-title>
+                             <v-list-tile-sub-title>Book Language</v-list-tile-sub-title>
                         </v-list-tile-content>
 
                          <v-list-tile-action>
-                            <v-icon color="blue darken-2">cloud_download</v-icon>
+                            <v-icon color="blue-grey">cloud_download</v-icon>
                         </v-list-tile-action>
 
                     </v-list-tile>
@@ -63,15 +66,16 @@
                    <v-list>
                     <v-list-tile>
                         <v-list-tile-action>
-                            <v-icon color="blue darken-2">book</v-icon>
+                            <v-icon color="teal accent-4">book</v-icon>
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                            <v-list-tile-title>الوسائل العامه</v-list-tile-title>
+                               <v-list-tile-title>Book Title</v-list-tile-title>
+                             <v-list-tile-sub-title>Book Language</v-list-tile-sub-title>
                         </v-list-tile-content>
 
                          <v-list-tile-action>
-                            <v-icon color="blue darken-2">cloud_download</v-icon>
+                            <v-icon color="blue-grey">cloud_download</v-icon>
                         </v-list-tile-action>
 
                     </v-list-tile>
@@ -81,15 +85,16 @@
                    <v-list>
                     <v-list-tile>
                         <v-list-tile-action>
-                            <v-icon color="blue darken-2">book</v-icon>
+                            <v-icon color="teal accent-4">book</v-icon>
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                            <v-list-tile-title>الوسائل العامه</v-list-tile-title>
+                           <v-list-tile-title>Book Title</v-list-tile-title>
+                             <v-list-tile-sub-title>Book Language</v-list-tile-sub-title>
                         </v-list-tile-content>
 
                          <v-list-tile-action>
-                            <v-icon color="blue darken-2">cloud_download</v-icon>
+                            <v-icon color="blue-grey ">cloud_download</v-icon>
                         </v-list-tile-action>
 
                     </v-list-tile>
@@ -104,4 +109,8 @@
     .v-list__tile__title{
         text-align: justify;
     }
+    .v-list__tile__sub-title{
+  text-align: justify;
+    }
 </style>
+
