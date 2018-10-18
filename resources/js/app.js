@@ -30,7 +30,9 @@ Vue.use(VueGoogleMaps, {
         libraries: "places" // necessary for places input
     }
 });
+import pdf from 'vue-pdf'
 new Vue({
+    pdf,
     i18n,
     router,
     render: h => h(App)

@@ -24,26 +24,41 @@ export const messages={
             location:'Location',
 
             answer_religious_questions:'Answer Religious Questions',
+
+            imam_sajad:'Imam Sajad',
+            invocations_and_ziarat:'Invocations And Ziarat',
+            islamic_ideology:'Islamic Ideology',
+            science_of_imam_and_rise_of_martyrs_master:'Science Of Imam And Rise Of Martyrs Master',
+            science_of_imam_scientist_tabatabai:'Science Of Imam By Scientist Tabatabai',
+            shia_in_islam:'Shia  In Islam',
+            who_is_hussein:'Who Is Hussein',
+            who_is_sajad:'Who Is Sajad',
+            ziarat:'Ziarat',
+            
+
             english:'English',
             france:'France',
             germany:'Germany',
             russia:'Russia',
             ardo_persian:'Ardo And Persian',
+            ardo:'Ardo',
+            kajaratia:'Kajaratia',
+            
         }
     },
-    ar:{
+    fr:{
         message:{
-            app_title:'خدمة الضيف',
-            locations:'المواقع',
-            shrines:'المزارات',
-            hotels:'الفنادق',
-            toilets:'الصحيات',
-            transportation:'النقل',
-            giftsVow:'الهدايا والنذور',
-            freeBooksCenters:'مراكز الكتب المجانيه',
-            restaurants:'المطاعم',
-            hospitality:'الضيافه',
-            visitorCities:'مدن الزائرين',
+            app_title:'Pèlerins irakiens',
+            locations:'Emplacements',
+            shrines:'sanctuaires',
+            hotels:'hôtels',
+            toilets:'toilettes',
+            transportation:'transport',
+            giftsVow:'cadeaux et vœux',
+            freeBooksCenters:'librairies gratuites',
+            restaurants:'restaurants',
+            hospitality:'hospitalité',
+            visitorCities:'Villes visiteurs',
             shrinesManagement:'اداره العتبات',
             cityEntries:'مداخل المدينه',
             map:'الخريطة',
@@ -54,12 +69,26 @@ export const messages={
             books:'الكتب',
             location:'الموقع',
 
-            answer_religious_questions:'الاجابه على المسائل الشرعيه',
-            english:'انكليزي',
-            france:'فرنسي',
-            germany:'الماني',
-            russia:'روسي',
-            ardo_persian:'الفارسي والاردو',
+            answer_religious_questions:'Answer Religious Questions',
+
+            imam_sajad:'Imam Sajad',
+            invocations_and_ziarat:'Invocations And Ziarat',
+            islamic_ideology:'Islamic Ideology',
+            science_of_imam_and_rise_of_martyrs_master:'Science Of Imam And Rise Of Martyrs Master',
+            science_of_imam_scientist_tabatabai:'Science Of Imam By Scientist Tabatabai',
+            shia_in_islam:'Shia  In Islam',
+            who_is_hussein:'Who Is Hussein',
+            who_is_sajad:'Who Is Sajad',
+            ziarat:'Ziarat',
+            
+
+            english:'English',
+            france:'France',
+            germany:'Germany',
+            russia:'Russia',
+            ardo_persian:'Ardo And Persian',
+            ardo:'Ardo',
+            kajaratia:'Kajaratia',
         }
     },
     fa:{
@@ -86,11 +115,24 @@ export const messages={
             location:'محل',
 
             answer_religious_questions:'جواب سوالات مذهبی',
+
+            imam_sajad:'Imam Sajad',
+            invocations_and_ziarat:'Invocations And Ziarat',
+            islamic_ideology:'Islamic Ideology',
+            science_of_imam_and_rise_of_martyrs_master:'Science Of Imam And Rise Of Martyrs Master',
+            science_of_imam_scientist_tabatabai:'Science Of Imam By Scientist Tabatabai',
+            shia_in_islam:'Shia  In Islam',
+            who_is_hussein:'Who Is Hussein',
+            who_is_sajad:'Who Is Sajad',
+            ziarat:'Ziarat',
+
             english:'انگلیسی',
             france:'فرانسه',
             germany:'آلمان',
             russia:'روسیه',
             ardo_persian:'فارسی و آرود',
+            ardo:'آرو',
+            kajaratia:'جاكا',
         }
     },
     

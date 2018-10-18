@@ -175,8 +175,8 @@
           <v-list-tile-title>English</v-list-tile-title>
         </v-list-tile>
 
-        <v-list-tile @click="changeLang('ar')">
-          <v-list-tile-title>عربي</v-list-tile-title>
+        <v-list-tile @click="changeLang('fr')">
+          <v-list-tile-title>Franc</v-list-tile-title>
         </v-list-tile>
 
         <v-list-tile @click="changeLang('fa')">
@@ -220,12 +220,12 @@
                    this.clippedRight=false;
                    this.clippedLeft=true;
                         break;
-                    case 'ar':
-                        this.$i18n.locale='ar';
-                   this.$vuetify.rtl=true;
-                   this.right=true;
-                   this.clippedRight=true;
-                   this.clippedLeft=false;
+                    case 'fr':
+                    this.$i18n.locale='fr';
+                   this.$vuetify.rtl=false;
+                   this.right=false;
+                   this.clippedRight=false;
+                   this.clippedLeft=true;
                         break;
                     case 'fa':
                          this.$i18n.locale='fa';

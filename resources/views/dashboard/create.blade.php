@@ -4,13 +4,14 @@
   <h4>أضافة موقع جديد</h4><br/>
   <form method="post" action="{{action('DashboardController@store')}}" enctype="multipart/form-data">
     @csrf
-    <div class="form-group">
-      <label for="inputNameAr">الاسم بالعربي</label>
-      <input type="text" class="form-control" id="inputNameAr" name="name_ar" placeholder="أدخل الأسم" required>
-    </div>
+   
     <div class="form-group">
       <label for="inputNameEn">الاسم بالانكليزي</label>
       <input type="text" class="form-control" id="inputNameEn" name="name_en" placeholder="أدخل الأسم" required>
+    </div>
+    <div class="form-group">
+      <label for="inputNameFr">الاسم بالفرنسي</label>
+      <input type="text" class="form-control" id="inputNameFr" name="name_fr" placeholder="أدخل الأسم" required>
     </div>
     <div class="form-group">
       <label for="inputNameFa">الاسم بالفارسي</label>
@@ -19,12 +20,12 @@
 
 
     <div class="form-group">
-      <label for="inputDetailsAr">التفاصيل بالعربي</label>
-      <textarea class="form-control" id="inputDetailsAr" name="details_ar" rows="2"></textarea>
-    </div>
-    <div class="form-group">
       <label for="inputDetailsEn">التفاصيل بالانكليزي</label>
       <textarea class="form-control" id="inputDetailsEn" name="details_en" rows="2"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="inputDetailsFr">التفاصيل بالفرنسي</label>
+      <textarea class="form-control" id="inputDetailsFr" name="details_fr" rows="2"></textarea>
     </div>
     <div class="form-group">
       <label for="inputDetailsFa">التفاصيل الفارسي</label>

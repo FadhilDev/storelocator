@@ -9,8 +9,8 @@ class ServiceController extends Controller
    
     public function index(Request $request)
     {
-        if($request->lang=='ar'){
-            $services = Service::select('id','name_ar AS name','details_ar AS details','lat','lng','phone','category','filename')->where('category', $request->category)->get();
+        if($request->lang=='fr'){
+            $services = Service::select('id','name_fr AS name','details_fr AS details','lat','lng','phone','category','filename')->where('category', $request->category)->get();
             return response($services, 200);
         }
         elseif($request->lang=='en'){
@@ -25,8 +25,8 @@ class ServiceController extends Controller
 
     public function map(Request $request)
     {
-           if($request->lang=='ar'){
-            $services = Service::select('id','name_ar AS name','details_ar AS details','lat','lng')->get();
+           if($request->lang=='fr'){
+            $services = Service::select('id','name_fr AS name','details_fr AS details','lat','lng')->get();
             return ServiceResource::collection($services);
         }
         elseif($request->lang=='en'){
