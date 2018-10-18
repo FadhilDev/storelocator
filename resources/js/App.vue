@@ -109,6 +109,14 @@
                             </v-list-tile-content>
                         </v-list-tile>
 
+                        <v-list-tile :to="{ name: 'Page12'}">
+                            <v-list-tile-action>
+                            </v-list-tile-action>
+                            <v-list-tile-content>
+                                <v-list-tile-title>{{ $t('message.medicalCenters')}}</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+
                          <v-list-tile :to="{ name: 'all_location'}">
                             <v-list-tile-action>
                             </v-list-tile-action>

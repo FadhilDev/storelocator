@@ -40,11 +40,11 @@ class DashboardController extends Controller
            $service->filename=$imageName.'.jpg';
         }
 
-        $service->name_ar=$request->get('name_fr');
         $service->name_en=$request->get('name_en');
+        $service->name_fr=$request->get('name_fr');
         $service->name_fa=$request->get('name_fa');
-        $service->details_ar=$request->get('details_fr');
         $service->details_en=$request->get('details_en');
+        $service->details_fr=$request->get('details_fr');
         $service->details_fa=$request->get('details_fa');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
@@ -78,12 +78,12 @@ class DashboardController extends Controller
            $service->filename=$imageName.'.jpg';
         }
       
-       $service->name_ar=$request->get('name_fr');
-       $service->name_en=$request->get('name_en');
-       $service->name_fa=$request->get('name_fa');
-       $service->details_ar=$request->get('details_fr');
-       $service->details_en=$request->get('details_en');
-       $service->details_fa=$request->get('details_fa');
+        $service->name_en=$request->get('name_en');
+        $service->name_fr=$request->get('name_fr');
+        $service->name_fa=$request->get('name_fa');
+        $service->details_en=$request->get('details_en');
+        $service->details_fr=$request->get('details_fr');
+        $service->details_fa=$request->get('details_fa');
        $service->category=$request->get('category');
        $service->lat=$request->get('lat');
        $service->lng=$request->get('lng');

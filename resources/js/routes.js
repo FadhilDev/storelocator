@@ -79,6 +79,11 @@ export const routes= [
             component: Page11
         },
         {
+            path: '/page12',
+            name: 'Page12',
+            component: Page12
+        },
+        {
             path: '/all_location',
             name: 'all_location',
             component: all_location

@@ -63,7 +63,7 @@
                               <option value="9">مدن الزائرين</option>
                               <option value="10">أدارة العتبات</option>
                               <option value="11">مداخل المدينه</option>
-                              <option value="12">اخرى</option>
+                              <option value="12">المراكزالطبيه</option>
                             </select>
     </div>
     <div class="form-group">

@@ -15,16 +15,15 @@ export const messages={
             visitorCities:'Visitor Cities',
             shrinesManagement:'Shrines Management',
             cityEntries:'City Entries',
+            medicalCenters:'Medical Centers',
             map:'Map',
-
             emergency_lines:'Emergency Lines',
             emergency_line:'Emergency Line',
             religious_questions:'Religious Questions',
             books:'Books',
             location:'Location',
-
             answer_religious_questions:'Answer Religious Questions',
-
+            //Books
             imam_sajad:'Imam Sajad',
             invocations_and_ziarat:'Invocations And Ziarat',
             islamic_ideology:'Islamic Ideology',
@@ -34,8 +33,7 @@ export const messages={
             who_is_hussein:'Who Is Hussein',
             who_is_sajad:'Who Is Sajad',
             ziarat:'Ziarat',
-            
-
+            //Language
             english:'English',
             france:'France',
             germany:'Germany',
@@ -59,18 +57,17 @@ export const messages={
             restaurants:'restaurants',
             hospitality:'hospitalité',
             visitorCities:'Villes visiteurs',
-            shrinesManagement:'اداره العتبات',
-            cityEntries:'مداخل المدينه',
-            map:'الخريطة',
-
-            emergency_lines:'خطوط الطوارئ',
-            emergency_line:'خط طوارئ',
-            religious_questions:'الاسئله الشرعيه',
-            books:'الكتب',
-            location:'الموقع',
-
-            answer_religious_questions:'Answer Religious Questions',
-
+            shrinesManagement:'Gestion des sanctuaires',
+            cityEntries:'Les entrées de la ville',
+            medicalCenters:'Centres médicaux',
+            map:'Carte',
+            emergency_lines:'Lignes durgence',
+            emergency_line:'Ligne durgence',
+            religious_questions:'Questions religieuses',
+            books:'Livres',
+            location:'Emplacement',
+            answer_religious_questions:'Répondez aux questions religieuses',
+            //Books
             imam_sajad:'Imam Sajad',
             invocations_and_ziarat:'Invocations And Ziarat',
             islamic_ideology:'Islamic Ideology',
@@ -80,8 +77,7 @@ export const messages={
             who_is_hussein:'Who Is Hussein',
             who_is_sajad:'Who Is Sajad',
             ziarat:'Ziarat',
-            
-
+            //Language
             english:'English',
             france:'France',
             germany:'Germany',
@@ -106,16 +102,15 @@ export const messages={
             visitorCities:'شهرهای بازدید کننده',
             shrinesManagement:'مدیریت حرم',
             cityEntries:'مطالب شهر',
+            medicalCenters:'مراکز پزشکی',
             map:'نقشه',
-
             emergency_lines:'خطوط اضطراری',
             emergency_line:'خط اضطراری',
             religious_questions:'سوالات دینی',
             books:'کتاب ها',
             location:'محل',
-
             answer_religious_questions:'جواب سوالات مذهبی',
-
+            //Books
             imam_sajad:'Imam Sajad',
             invocations_and_ziarat:'Invocations And Ziarat',
             islamic_ideology:'Islamic Ideology',
@@ -125,7 +120,7 @@ export const messages={
             who_is_hussein:'Who Is Hussein',
             who_is_sajad:'Who Is Sajad',
             ziarat:'Ziarat',
-
+            //Language
             english:'انگلیسی',
             france:'فرانسه',
             germany:'آلمان',

@@ -12,7 +12,7 @@
     </div>
     <div class="form-group">
       <label for="inputNameFr">الاسم بالفرنسي</label>
-      <input type="text" class="form-control" id="inputNameFr" name="name_fr" placeholder="أدخل الأسم" required value="{{$service->name_ar}}">
+      <input type="text" class="form-control" id="inputNameFr" name="name_fr" placeholder="أدخل الأسم" required value="{{$service->name_fr}}">
     </div>
     <div class="form-group">
       <label for="inputNameFa">الاسم بالفارسي</label>
@@ -25,7 +25,7 @@
     </div>
     <div class="form-group">
       <label for="inputDetailsFr">التفاصيل بالفرنسي</label>
-      <textarea class="form-control" id="inputDetailsFr" name="details_fr" rows="2">{{$service->details_ar}}</textarea>
+      <textarea class="form-control" id="inputDetailsFr" name="details_fr" rows="2">{{$service->details_fr}}</textarea>
     </div>
     <div class="form-group">
       <label for="inputDetailsFa">التفاصيل بالفارسي</label>
@@ -64,7 +64,7 @@
                           <option value="9" @if($service->category==9) selected @endif>مدن الزائرين</option>
                           <option value="10" @if($service->category==10) selected @endif>أدارة العتبات</option>
                           <option value="11" @if($service->category==11) selected @endif>مداخل المدينه</option>
-                          <option value="12" @if($service->category==12) selected @endif>اخرى</option>
+                          <option value="12" @if($service->category==12) selected @endif>المراكز الطبيه</option>
                         </select>
     </div>
     <div class="form-group">
