@@ -21,8 +21,10 @@
     },
     "dependencies": {
         "material-design-icons-iconfont": "^3.0.3",
+        "vue-clazy-load": "^0.4.2",
         "vue-i18n": "^8.1.0",
         "vue-router": "^3.0.1",
+        "vue-spinner": "^1.0.3",
         "vue2-google-maps": "^0.10.2",
         "vuetify": "^1.2.5"
     }

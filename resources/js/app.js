@@ -1,6 +1,8 @@
 require('./bootstrap');
 window.Vue = require('vue');
-
+import VueClazyLoad from 'vue-clazy-load'
+Vue.use(VueClazyLoad)
+Vue.component('scale-loader', require('vue-spinner/src/ScaleLoader.vue'));
 import App from './App.vue'
 import VueI18n from 'vue-i18n'
 import {messages} from './lang.js'

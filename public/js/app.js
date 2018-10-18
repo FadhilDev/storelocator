@@ -26233,47 +26233,51 @@ module.exports = __webpack_require__(161);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_vue__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_i18n__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lang_js__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_router__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes_js__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuetify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vuetify_dist_vuetify_min_css__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vuetify_dist_vuetify_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_material_design_icons_iconfont_dist_material_design_icons_css__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_material_design_icons_iconfont_dist_material_design_icons_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_material_design_icons_iconfont_dist_material_design_icons_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_google_maps__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue2_google_maps__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_clazy_load___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_clazy_load__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_i18n__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lang_js__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_router__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routes_js__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vuetify__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vuetify__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vuetify_dist_vuetify_min_css__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vuetify_dist_vuetify_min_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_material_design_icons_iconfont_dist_material_design_icons_css__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_material_design_icons_iconfont_dist_material_design_icons_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_material_design_icons_iconfont_dist_material_design_icons_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue2_google_maps__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_vue2_google_maps__);
 __webpack_require__(26);
 window.Vue = __webpack_require__(19);
 
+Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_clazy_load___default.a);
+Vue.component('scale-loader', __webpack_require__(182));
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_i18n__["a" /* default */]);
-var i18n = new __WEBPACK_IMPORTED_MODULE_1_vue_i18n__["a" /* default */]({
+Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_i18n__["a" /* default */]);
+var i18n = new __WEBPACK_IMPORTED_MODULE_2_vue_i18n__["a" /* default */]({
     locale: 'en',
-    messages: __WEBPACK_IMPORTED_MODULE_2__lang_js__["a" /* messages */]
+    messages: __WEBPACK_IMPORTED_MODULE_3__lang_js__["a" /* messages */]
 });
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]);
-var router = new __WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]({
-    routes: __WEBPACK_IMPORTED_MODULE_4__routes_js__["a" /* routes */]
+Vue.use(__WEBPACK_IMPORTED_MODULE_4_vue_router__["a" /* default */]);
+var router = new __WEBPACK_IMPORTED_MODULE_4_vue_router__["a" /* default */]({
+    routes: __WEBPACK_IMPORTED_MODULE_5__routes_js__["a" /* routes */]
 });
 
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_5_vuetify___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_6_vuetify___default.a);
 
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_8_vue2_google_maps__, {
+Vue.use(__WEBPACK_IMPORTED_MODULE_9_vue2_google_maps__, {
     load: {
         key: "AIzaSyCLbarhqrxyP9XUh29eJzGQnbqbjgITShY",
         libraries: "places" // necessary for places input
@@ -26283,7 +26287,7 @@ new Vue({
     i18n: i18n,
     router: router,
     render: function render(h) {
-        return h(__WEBPACK_IMPORTED_MODULE_0__App_vue___default.a);
+        return h(__WEBPACK_IMPORTED_MODULE_1__App_vue___default.a);
     }
 }).$mount('#app');
 
@@ -54064,33 +54068,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            list: []
-        };
-    },
-    mounted: function mounted() {
-        this.initData();
-    },
+  data: function data() {
+    return {
+      list: []
+    };
+  },
+  mounted: function mounted() {
+    this.initData();
+  },
 
-    watch: {
-        '$i18n.locale': function $i18nLocale() {
-            this.initData();
-        }
-    },
-    methods: {
-        initData: function initData() {
-            var _this = this;
-
-            axios.get('api/services', { params: { category: 1, lang: this.$i18n.locale } }).then(function (_ref) {
-                var data = _ref.data;
-
-                _this.list = data;
-            }).catch(function (error) {});
-        }
+  watch: {
+    "$i18n.locale": function $i18nLocale() {
+      this.initData();
     }
+  },
+  methods: {
+    initData: function initData() {
+      var _this = this;
+
+      axios.get("api/services", {
+        params: { category: 1, lang: this.$i18n.locale }
+      }).then(function (_ref) {
+        var data = _ref.data;
+
+        _this.list = data;
+      }).catch(function (error) {});
+    }
+  }
 });
 
 /***/ }),
@@ -54116,15 +54131,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -54270,6 +54329,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -54323,15 +54391,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -54477,6 +54589,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -54530,15 +54651,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -54684,6 +54849,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -54737,15 +54911,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -54891,6 +55109,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -54944,15 +55171,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -55098,6 +55369,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -55151,15 +55431,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -55305,6 +55629,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -55358,15 +55691,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -55512,6 +55889,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -55565,15 +55951,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -55719,6 +56149,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -55772,15 +56211,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -55926,6 +56409,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -55980,15 +56472,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -56134,6 +56670,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -56188,15 +56733,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -56342,6 +56931,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -56395,15 +56993,59 @@ var render = function() {
               _c(
                 "v-card",
                 [
-                  _c("v-img", {
-                    staticClass: "white--text",
-                    attrs: {
-                      height: "200px",
-                      src: item.filename
-                        ? "storage/imgs/" + item.filename
-                        : "storage/imgs/empty-image.png"
-                    }
-                  }),
+                  _c(
+                    "clazy-load",
+                    {
+                      attrs: {
+                        src: item.filename
+                          ? "storage/imgs/" + item.filename
+                          : "storage/imgs/empty-image.png"
+                      }
+                    },
+                    [
+                      _c("v-img", {
+                        staticClass: "white--text",
+                        attrs: {
+                          height: "200px",
+                          src: item.filename
+                            ? "storage/imgs/" + item.filename
+                            : "storage/imgs/empty-image.png"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "preloader",
+                          staticStyle: { height: "200px" },
+                          attrs: { slot: "placeholder" },
+                          slot: "placeholder"
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "", "fill-height": "" } },
+                            [
+                              _c(
+                                "v-layout",
+                                {
+                                  attrs: {
+                                    "justify-center": "",
+                                    "align-center": ""
+                                  }
+                                },
+                                [_c("scale-loader")],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-card-title", { attrs: { "primary-title": "" } }, [
                     _c("div", [
@@ -81724,6 +82366,563 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("VueClazyLoad", [], factory);
+	else if(typeof exports === 'object')
+		exports["VueClazyLoad"] = factory();
+	else
+		root["VueClazyLoad"] = factory();
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VueClazyLoad", function() { return VueClazyLoad; });
+/*!
+ * Vue Clazy Load
+ * Component-based lazy (CLazy) load images in Vue.js 2
+ * @author Matheus Grieger
+ * @version 0.4.2
+ */
+var ClazyLoadComponent = {
+  name: 'ClazyLoad',
+  props: {
+    /**
+     * HTML/Component tag name to be used in place of the component
+     * @type {String}
+     * @default div
+     */
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    /**
+     * Image source URL
+     * @type {String}
+     * @required
+     */
+    src: {
+      type: String,
+      required: true
+    },
+    /**
+     * IntersectionObserver root element
+     * @type {String}
+     */
+    element: String,
+    /**
+     * IntersectionObserver threshold
+     * @type {Array, Number}
+     */
+    threshold: {
+      type: [Array, Number],
+      default: function _default() {
+        return [0, 0.5, 1];
+      }
+    },
+    /**
+     * InserectionObserver visibility ratio
+     * @type {Number}
+     */
+    ratio: {
+      type: Number,
+      default: 0.4,
+      validator: function validator(value) {
+        // can't be less or equal to 0 and greater than 1
+        return value > 0 && value <= 1;
+      }
+    },
+    /**
+     * IntersectionObserver root margin
+     * @type {String}
+     */
+    margin: {
+      type: String,
+      default: '0px'
+    },
+    /**
+     * Optional CORS mode ("anonymous" | "use-credentials")
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-crossorigin
+     * @type {String}
+     */
+    crossorigin: {
+      type: String,
+      default: null,
+      validator: function validator(value) {
+        return value === 'anonymous' || value === 'use-credentials';
+      }
+    },
+    /**
+     * Class added to element when it finishes loading
+     * @type {String}
+     * @default loaded
+     */
+    loadedClass: {
+      type: String,
+      default: 'loaded'
+    },
+    /**
+     * Class added to element while it is loading
+     * @type {String}
+     */
+    loadingClass: {
+      type: String,
+      default: 'loading'
+    },
+    /**
+     * Class added to element if loading failed
+     * @type {String}
+     */
+    errorClass: {
+      type: String,
+      default: null
+    }
+  },
+  data: function data() {
+    return {
+      loaded: false,
+      observer: null,
+      errored: false
+    };
+  },
+
+  methods: {
+    /**
+     * Start loading image
+     */
+    load: function load() {
+      var _this = this;
+
+      // emits 'loading' event upwards
+      this.$emit('loading');
+
+      // disconnect observer
+      // so it doesn't load more than once
+      this.observer.disconnect();
+
+      if (!this.loaded) {
+        // fake image
+        var img = new Image();
+
+        img.addEventListener('load', function () {
+          _this.loaded = true;
+          // emits 'load' event upwards
+          _this.$emit('load');
+
+          _clear();
+        });
+
+        img.addEventListener('error', function (event) {
+          _this.errored = true;
+          // emits 'error' event upwards
+          // adds the original event as argument
+          _this.$emit('error', event);
+
+          _clear();
+        });
+
+        // function used to clear variables from memory
+        var _clear = function _clear() {
+          // discard fake image
+          img = null;
+          // remove observer from memory
+          _this.observer = null;
+        };
+
+        // CORS mode configuration
+        if (this.crossorigin !== null) {
+          img.crossOrigin = this.crossorigin;
+        }
+
+        img.src = this.src;
+      }
+    },
+
+
+    /**
+     * Creates IntersectionObserver instance and observe current element
+     */
+    observe: function observe() {
+      var _this2 = this;
+
+      var options = {
+        threshold: this.threshold,
+        root: this.element ? document.querySelector(this.element) : null,
+        rootMargin: this.margin
+
+        // creates IO instance
+      };this.observer = new IntersectionObserver(function (entries) {
+        // as we instantiated one for each component
+        // we can directly access the first index
+        if (entries[0].intersectionRatio >= _this2.ratio) {
+          _this2.load();
+        }
+      }, options);
+
+      // start observing main component
+      this.observer.observe(this.$el);
+    }
+  },
+  render: function render(h) {
+    // class to be added to element indicating load state
+    var elementClass = this.loaded ? this.loadedClass : this.loadingClass;
+
+    return h(this.tag, {
+      // if loading failed adds error class if exists,
+      // otherwhise adds elementClass defined above
+      class: this.errored && this.errorClass ? this.errorClass : elementClass
+    }, [this.loaded ? this.$slots.default || this.$slots.image // allows for "default" slot
+    : this.$slots.placeholder]);
+  },
+  mounted: function mounted() {
+    // start observing the element visibility
+    this.$nextTick(this.observe);
+  }
+};
+
+// Export install function for CDN embeds
+var install = function install(Vue) {
+  Vue.component('clazy-load', ClazyLoadComponent);
+};
+
+// Component object
+var VueClazyLoad = ClazyLoadComponent;
+
+// Exports default object for ES6 modules
+/* harmony default export */ __webpack_exports__["default"] = ({
+  install: install
+});
+
+/***/ })
+/******/ ]);
+});
+
+/***/ }),
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(183)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(185)
+/* template */
+var __vue_template__ = __webpack_require__(186)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "node_modules/vue-spinner/src/ScaleLoader.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5873723e", Component.options)
+  } else {
+    hotAPI.reload("data-v-5873723e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(184);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("7ce39376", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5873723e\",\"scoped\":false,\"hasInlineConfig\":true}!../../vue-loader/lib/selector.js?type=styles&index=0!./ScaleLoader.vue", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5873723e\",\"scoped\":false,\"hasInlineConfig\":true}!../../vue-loader/lib/selector.js?type=styles&index=0!./ScaleLoader.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.v-spinner\n{\n/*\t  font-size: 10px; \n\n    width: 60px;\n    height: 40px;*/\n    /*margin: 25px auto;*/\n    text-align: center;\n}\n@-webkit-keyframes v-scaleStretchDelay\n{\n0%,\n    100%\n    {\n        -webkit-transform: scaleY(1);\n                transform: scaleY(1);\n}\n50%\n    {\n        -webkit-transform: scaleY(0.4);\n                transform: scaleY(0.4);\n}\n}\n@keyframes v-scaleStretchDelay\n{\n0%,\n    100%\n    {\n        -webkit-transform: scaleY(1);\n                transform: scaleY(1);\n}\n50%\n    {\n        -webkit-transform: scaleY(0.4);\n                transform: scaleY(0.4);\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 185 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+  name: 'ScaleLoader',
+
+  props: {
+    loading: {
+      type: Boolean,
+      default: true
+    },
+    color: {
+      type: String,
+      default: '#5dc596'
+    },
+    height: {
+      type: String,
+      default: '35px'
+    },
+    width: {
+      type: String,
+      default: '4px'
+    },
+    margin: {
+      type: String,
+      default: '2px'
+    },
+    radius: {
+      type: String,
+      default: '2px'
+    }
+  },
+  data: function data() {
+    return {
+      spinnerStyle: {
+        backgroundColor: this.color,
+        height: this.height,
+        width: this.width,
+        margin: this.margin,
+        borderRadius: this.radius,
+        display: 'inline-block',
+        animationName: 'v-scaleStretchDelay',
+        animationDuration: '1s',
+        animationIterationCount: 'infinite',
+        animationTimingFunction: 'cubic-bezier(.2,.68,.18,1.08)',
+        animationFillMode: 'both'
+        // TODO 
+        // animation: ['sk-waveStretchDelay', '1s', 'infinite', 'cubic-bezier(.2,.68,.18,1.08)'].join(' '),
+        // animationFillMode: "both"
+      },
+      spinnerDelay1: {
+        animationDelay: '0.1s'
+      },
+      spinnerDelay2: {
+        animationDelay: '0.2s'
+      },
+      spinnerDelay3: {
+        animationDelay: '0.3s'
+      },
+      spinnerDelay4: {
+        animationDelay: '0.4s'
+      },
+      spinnerDelay5: {
+        animationDelay: '0.5s'
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      directives: [
+        {
+          name: "show",
+          rawName: "v-show",
+          value: _vm.loading,
+          expression: "loading"
+        }
+      ],
+      staticClass: "v-spinner"
+    },
+    [
+      _c("div", {
+        staticClass: "v-scale v-scale1",
+        style: [_vm.spinnerStyle, _vm.spinnerDelay1]
+      }),
+      _c("div", {
+        staticClass: "v-scale v-scale2",
+        style: [_vm.spinnerStyle, _vm.spinnerDelay2]
+      }),
+      _c("div", {
+        staticClass: "v-scale v-scale3",
+        style: [_vm.spinnerStyle, _vm.spinnerDelay3]
+      }),
+      _c("div", {
+        staticClass: "v-scale v-scale4",
+        style: [_vm.spinnerStyle, _vm.spinnerDelay4]
+      }),
+      _c("div", {
+        staticClass: "v-scale v-scale5",
+        style: [_vm.spinnerStyle, _vm.spinnerDelay5]
+      })
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5873723e", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
