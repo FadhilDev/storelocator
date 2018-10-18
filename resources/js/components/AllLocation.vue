@@ -21,8 +21,8 @@ export default {
   data() {
     return {
       center: {
-            lat: 32.607072,
-            lng: 44.010930
+            lat:32.616220,
+            lng:44.032058
           },
            markers: [],
            infoContent: '',
