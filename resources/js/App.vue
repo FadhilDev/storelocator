@@ -176,7 +176,7 @@
         </v-list-tile>
 
         <v-list-tile @click="changeLang('fr')">
-          <v-list-tile-title>Franc</v-list-tile-title>
+          <v-list-tile-title>France</v-list-tile-title>
         </v-list-tile>
 
         <v-list-tile @click="changeLang('fa')">
