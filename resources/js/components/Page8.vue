@@ -6,21 +6,12 @@
         <v-layout row wrap>
           <v-flex :key="index" v-for="(item,index) in list" xs12 sm6 md6 lg4>
             <v-card>
-                   <clazy-load :src="item.filename ? 'storage/imgs/' + item.filename : 'storage/imgs/empty-image.png'">
-                  <v-img
+                   <v-img
                       class="white--text"
                       height="200px"
                       :src="item.filename ? 'storage/imgs/' + item.filename : 'storage/imgs/empty-image.png'"
               >
               </v-img>
-                 <div class="preloader" slot="placeholder" style="height:200px;">
-                   <v-container fluid fill-height>
-                       <v-layout justify-center align-center>
-                         <scale-loader/>
-                       </v-layout>
-                   </v-container>         
-              </div>
-            </clazy-load>
               <v-card-title primary-title>
                 <div>
                   <h3 class="headline mb-0">{{item.name}}</h3>
@@ -39,30 +30,32 @@
       </v-container>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                list: [],
-            };
-        },
-        mounted() {
-            this.initData();
-        },
- 
- watch: {
-   '$i18n.locale': function () {
-      this.initData();
-   }
-    },
-        methods: {
-            initData() {
-                axios.get('api/services', {params: {category: 8,lang:this.$i18n.locale}})
-                    .then(({data}) => {
-                        this.list = data;
-                    })
-                    .catch(error => {
-                    });
-            },
-        }
+export default {
+  data() {
+    return {
+      list: []
     };
+  },
+  mounted() {
+    this.initData();
+  },
+
+  watch: {
+    "$i18n.locale": function() {
+      this.initData();
+    }
+  },
+  methods: {
+    initData() {
+      axios
+        .get("api/services", {
+          params: { category: 8, lang: this.$i18n.locale }
+        })
+        .then(({ data }) => {
+          this.list = data;
+        })
+        .catch(error => {});
+    }
+  }
+};
 </script>
