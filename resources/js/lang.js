@@ -46,7 +46,7 @@ export const messages={
     },
     fr:{
         message:{
-            app_title:'Pèlerins irakiens',
+            app_title:'Pèlerins en Irak',
             locations:'Emplacements',
             shrines:'sanctuaires',
             hotels:'hôtels',
